@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
-import { PREFIX, COMMANDS } from "./constant";
-import { playSomething } from "./utils/index";
+import { PREFIX, COMMANDS, LEAVE } from "./constant";
+import { playSomething, printCommands } from "./utils/index";
 
 dotenv.config();
 
@@ -18,8 +18,12 @@ client.on("message", async (message) => {
   switch (args[0]) {
     case PREFIX:
       if (!args[1]) {
-        console.log("here");
-        message.channel.send("Stanowski, gdzie jest link?");
+        message.channel.send("Stanowski, gdzie jest jakaś komenda?");
+        return;
+      }
+
+      if (args[1] === COMMANDS.COMMANDS) {
+        printCommands(message);
         return;
       }
 
@@ -53,6 +57,26 @@ client.on("message", async (message) => {
         return;
       }
 
+      if (args[1] === COMMANDS.FUCK_OFF) {
+        playSomething("nara.mp3", message);
+        return;
+      }
+
+      if (args[1] === COMMANDS.PEOPLE) {
+        playSomething("ludzie.mp3", message);
+        return;
+      }
+
+      if (args[1] === COMMANDS.WELCOME) {
+        playSomething("witam.mp3", message);
+        return;
+      }
+
+      message.channel.send("Co ty pierdolisz, nie ma takiej komendy!");
+
+      break;
+    case LEAVE:
+      message.member?.voice.channel?.leave();
       break;
   }
 });
