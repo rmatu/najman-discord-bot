@@ -33,7 +33,7 @@ client.on("message", async (message) => {
       }
 
       if (args[1] === COMMANDS.WHAT) {
-        playSomething("co-ty-pierdolisz.mp3", message);
+        playSomething("co.mp3", message);
         return;
       }
 
