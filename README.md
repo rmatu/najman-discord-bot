@@ -1,7 +1,7 @@
 # Najman Discord Bot
 
 - [Lista komend](#lista-komend)
-- [Jak dodać bota na swój server discord](#jak-dodać-bota-na-swój-server-discord)
+- [Jak dodać bota na swój server discord?](#jak-dodać-bota-na-swój-server-discord?)
 
 ## Lista komend
 
@@ -18,7 +18,7 @@
 | !najman ludzie    | Bot odtwarza ludzie.mp3               |
 | !najman witam     | Bot odwarza witam.mp3                 |
 
-## Jak dodać bota na swój server discord
+## Jak dodać bota na swój server discord?
 
 - Zainstaluj wszystkie paczki
 
