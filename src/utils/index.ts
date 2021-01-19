@@ -1,6 +1,7 @@
 import { join } from "path";
 import fs from "fs";
 import { arrayCommands, PREFIX } from "../constant";
+import * as googleTTS from "google-tts-api";
 
 export const playSomething = async (song: string, message: any) => {
   const connection = await message.member.voice.channel.join();
@@ -27,4 +28,21 @@ export const printCommands = async (message: any) => {
     text = `${text}${PREFIX} ${command}\n`;
   });
   await message.channel.send(text);
+};
+
+export const say = async (message: any) => {
+  googleTTS
+    .getAudioBase64("Hello world", {
+      lang: "en-US",
+      slow: false,
+      host: "https://translate.google.com",
+      timeout: 10000,
+    })
+    .then(console.log)
+    // [
+    //   { shortText: '...', base64: '...' },
+    //   { shortText: '...', base64: '...' },
+    //   ...
+    // ];
+    .catch(console.error);
 };

@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import { PREFIX, COMMANDS, LEAVE } from "./constant";
-import { playSomething, printCommands } from "./utils/index";
+import { playSomething, printCommands, say } from "./utils/index";
 
 dotenv.config();
 
@@ -69,6 +69,16 @@ client.on("message", async (message) => {
 
       if (args[1] === COMMANDS.WELCOME) {
         playSomething("witam.mp3", message);
+        return;
+      }
+
+      if (args[1] === COMMANDS.RAGE) {
+        playSomething("rage.mp3", message);
+        return;
+      }
+
+      if (args[1] === COMMANDS.TFU) {
+        playSomething("tfu.mp3", message);
         return;
       }
 

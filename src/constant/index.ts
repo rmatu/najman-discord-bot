@@ -10,6 +10,9 @@ export const COMMANDS = {
   PEOPLE: "ludzie",
   COMMANDS: "komendy",
   WELCOME: "witam",
+  SAY: "powiedz",
+  RAGE: "rage",
+  TFU: "tfu",
 };
 
 export const arrayCommands: string[] = [
@@ -21,4 +24,6 @@ export const arrayCommands: string[] = [
   "nara",
   "ludzie",
   "witam",
+  "rage",
+  "tfu",
 ];
