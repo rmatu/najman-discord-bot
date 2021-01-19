@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import { PREFIX, COMMANDS, LEAVE } from "./constant";
-import { playSomething, printCommands, say } from "./utils/index";
+import { playSomething, printCommands } from "./utils/index";
 
 dotenv.config();
 
