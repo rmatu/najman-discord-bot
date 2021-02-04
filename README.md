@@ -20,21 +20,31 @@
 
 ## Jak dodać bota na swój server discord?
 
+### Bot hostowany przeze mnie
+
+- Jak zdobyć swój CLIENT ID?
+  <br/>https://support.discord.com/hc/pl/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-
+
+Teraz możesz dodać swój CLIENT_ID do linku
+
+- Dodaj bota na swój serwer wchodząc w ten link discord.com/api/oauth2/authorize?client_id=$TWÓJ_CLIENT_ID&scope=bot
+
+### Bot hostowany przez Ciebie
+
 - Zainstaluj wszystkie paczki
 
 ```bash
   yarn
 ```
 
-- W celu zdobycia swojego tokena, wejdz na stronę https://discord.com/developers/applications, kliknij w przycisk "New Application", Token znajdziesz w zakładce "Bot"
+- Jak zdobyć swój CLIENT ID?
+  <br/>https://support.discord.com/hc/pl/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-
 
 - Stwórz plik .env w folderze src oraz dodaj swój token
 
 ```.env
 DISCORD_BOT_TOKEN=$TWÓJ_TOKEN
 ```
-
-- Przejdź do zakładki "General Information" i skopiuj swój CLIENT ID
 
 - Dodaj bota na swój serwer wchodząc w ten link discord.com/api/oauth2/authorize?client_id=$TWÓJ_CLIENT_ID&scope=bot
 
