@@ -13,6 +13,7 @@ export const COMMANDS = {
   SAY: "powiedz",
   RAGE: "rage",
   TFU: "tfu",
+  COME_HERE: "chodz",
 };
 
 export const arrayCommands: string[] = [
@@ -26,4 +27,5 @@ export const arrayCommands: string[] = [
   "witam",
   "rage",
   "tfu",
+  "chodz",
 ];
