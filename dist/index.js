@@ -79,6 +79,10 @@ client.on("message", (message) => __awaiter(void 0, void 0, void 0, function* ()
                 index_1.playSomething("tfu.mp3", message);
                 return;
             }
+            if (args[1] === constant_1.COMMANDS.COME_HERE) {
+                index_1.playSomething("chodztu.mp3", message);
+                return;
+            }
             message.channel.send("Co ty pierdolisz, nie ma takiej komendy!");
             break;
         case constant_1.LEAVE:

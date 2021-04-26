@@ -16,6 +16,7 @@ exports.COMMANDS = {
     SAY: "powiedz",
     RAGE: "rage",
     TFU: "tfu",
+    COME_HERE: "chodz",
 };
 exports.arrayCommands = [
     "co",
@@ -28,5 +29,6 @@ exports.arrayCommands = [
     "witam",
     "rage",
     "tfu",
+    "chodz",
 ];
 //# sourceMappingURL=index.js.map
